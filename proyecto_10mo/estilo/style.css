@@ -105,13 +105,9 @@ body {
 .login {
 	width: 320px;
 	padding: 30px;
-	padding-top: 156px;
+	padding-top: 50px;
 }
-.registro {
-	width: 320px;
-	padding: 30px;
-	padding-top: 156px;
-}
+
 
 .login__field {
 	padding: 20px 0px;
@@ -160,6 +156,7 @@ body {
 	transition: .2s;
 }
 
+
 .login__submit:active,
 .login__submit:focus,
 .login__submit:hover {
@@ -199,4 +196,3 @@ body {
 .social-login__icon:hover {
 	transform: scale(1.5);
 }
-

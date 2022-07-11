@@ -1,0 +1,142 @@
+
+.container-table{
+	width: 90%;
+	background: green;
+	margin: 50px auto;
+     display: grid;
+     grid-template-columns: repeat(6, 1fr);
+     grid-auto-rows: 50px;
+     color: rgb(0, 0, 0)
+}
+
+.table_title{
+	grid-column-start:1 ;
+	grid-column-end:7;
+	background: rgba(40,65,120.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    color: rgb(255, 255, 255)
+}
+.table_header, .table_ite{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.table_item{
+	padding: 10px;
+	font-size: 1.2em;
+}
+
+.tabla_pdf{
+color: rgb(255, 0, 0);
+position: absolute;
+right: 30%;
+text-decoration: none;
+ 
+}
+
+
+/* formulario Insertar*/
+
+.container-add{
+	width: 50%;
+	margin: 10px auto;
+}
+.container_title{
+	margin:100;
+	padding: 50px;
+	background: rgba(120,65,40,1);
+	color: white;
+	font-size: center;
+}
+.container_form{
+	background: white;
+	box-shadow: 0 0 20px #333;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.container_label{
+
+	color: rgb(0, 0, 0);
+	font-size: 1em;
+	width: 20%;
+
+}
+.container_input{
+width: 25%;
+margin-right: 10px;
+margin-bottom: 10px;
+font-size: 1em;
+padding: 5px;
+
+}
+.title_edit{
+position: absolute;
+right: 7%;
+color: rgb(255, 0, 0);
+text-decoration: none;
+
+
+}
+.titulio_e{
+position: absolute;
+right: 10%;
+color: rgb(255, 0, 0);
+text-decoration: none;
+}
+.titulio_a{
+position: absolute;
+right: 80%;
+color: rgb(255, 0, 0);
+text-decoration: none;
+}
+
+
+
+.container-table--edit{
+	grid-template-columns: repeat(9, 1fr);
+	width: 100%;
+
+}
+.table_title--edit{
+	grid-column-start:1 ;
+	grid-column-end:10;
+}
+
+}
+.table_usuario {
+	grid-column-start:3;
+	grid-column-end:1;
+		
+}
+
+.table_input{
+	display: block;
+	padding-left: 10px;
+
+}
+.container_submit-actualizar{
+	background: rgba(40,65,120,1);
+	padding: 0;
+	margin: 0;
+	font-size: .9em;
+	width: 100%;
+}
+
+
+.container-table_usu{
+	
+     grid-template-columns: repeat(1, 1fr);
+	width: 100%;
+}
+
+.boton_new{
+	width: 25%;
+margin-right: 10px;
+margin-bottom: 10px;
+font-size: 1em;
+padding: 5px;
+}
