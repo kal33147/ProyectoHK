@@ -45,16 +45,12 @@
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
-          <!--<li class="drop-down"><a href="">Ingresar</a>
-            <ul>
-              <li><a href="proyecto_10mo/registro.html">Registrarse</a></li>
-              <li><a href="proyecto_10mo/login.html">Ya tengo una cuenta</a></li>
-            </ul>
-          </li>  -->
+          <li class="drop-down"><a href="registroNegocio.php">Agregar Negocio</a>
+          </li>  
            <li><a href="TipodeCapacitacion.html">Aviso de privacidad</a></li>
            <li class="drop-down"> <a href="">Perfil</a>
             <ul>
-                <li><a href="http://localhost/ProyectoHK/proyecto_10mo/salir.php">Cerrar Sesión</a></li>
+                <li><a href="http://localhost/ProyectoHK10/proyecto_10mo/salir.php">Cerrar Sesión</a></li>
             </ul>
         </li>
         </ul>
@@ -75,7 +71,6 @@
    <div class="container">
       <div  class="row justify-content-center align-self-center">
         <h1>Bienvenido <?php 
-        session_start(); 
           echo $_SESSION['cocina'];
           ?></h1>
           <h2>Cocina</h2>
