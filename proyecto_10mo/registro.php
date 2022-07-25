@@ -30,9 +30,9 @@
 				<div class="login__field">
 					<p class="ps">Soy dueño de:</p>
 					<select name="Tipo_usu">
-						<option value="0"></option>
-						<option value="1" >Restaurante</option>
-						<option value="2">Cocina</option>
+						<option value= 0 ></option>
+						<option value= 1 >Restaurante</option>
+						<option value= 2 >Cocina</option>
 					  </select>
 				</div>
             

@@ -9,23 +9,19 @@ if(isset($_POST['btn_login'])):
    $password = $_POST['pass_usu'];
    $data="Email_usu='".$email."' AND Contra_usu = '".$password."'";
    $u=$user->buscar("usuario",$data);
+    
      
     
    if($u):
    foreach ($u as  $value):
-   	if($value['Tipo_usu']== 2):
+   	if($value['Tipo_usu']== "1"):
    	      $_SESSION['restaurant'] = $value['Nombre_usu'];
-
-     
-
-       else:
-   
-            
-  $_SESSION['cocina'] = $value['Nombre_cocina'];
+       else:          
+  $_SESSION['cocina'] = $value['Nombre_usu'];
   
    endif; 
 
-         $_SESSION['restaurant']= $value['Nombre_usu'];
+   
 
     endforeach;
     $mensaje="mensaje=Bienvenido";
