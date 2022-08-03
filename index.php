@@ -6,5 +6,4 @@ elseif(isset($_SESSION['restaurant']))
 	require "index_restaurant.php";
 else
 	require "proyecto_10mo/login.php";
-	
  ?>
