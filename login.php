@@ -1,36 +1,40 @@
-<?php 
-  session_start();
-  if(isset($_SESSION['unique_id'])){
-    header("location: usuarios.php");
-  }
-?>
-
-<?php include_once "header.php"; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hkitchens</title>
+  <link href="img/hk.png" rel="icon">
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <div class="wrapper">
-    <section class="form login">
-      <header>Chat en tiempo real</header>
-      <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
-        <div class="error-text"></div>
-        <div class="field input">
-          <label>Dirección de correo electrónico</label>
-          <input type="text" name="email" placeholder="Introduce tu correo electrónico" required>
-        </div>
-        <div class="field input">
-          <label>Contraseña</label>
-          <input type="password" name="password" placeholder="Ingresa tu contraseña" required>
-          <i class="fas fa-eye"></i>
-        </div>
-        <div class="field button">
-          <input type="submit" name="submit" value="Continuar chateando">
-        </div>
-      </form>
-      <div class="link">Aún no te has registrado? <a href="index.php">Regístrate ahora</a></div>
-    </section>
-  </div>
-  
-  <script src="../js/pass-show-hide.js"></script>
-  <script src="../js/login.js"></script>
 
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+			<form class="login" action="loguear.php" method="post">
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" name="Email_usu" class="login__input" placeholder="Email">
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+					<input type="password" name="pass_usu" class="login__input" placeholder="Password" required minlength="5">
+				</div>
+				<button class="button login__submit" type="submit" name="btn_login">
+					<span class="button__text">Ingresar</span>
+				</button>
+					<a id="Ar" href="registro.php">Registrarme</a>	
+			</form>
+			
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>
+	</div>
+</div>
 </body>
+
 </html>
