@@ -1,7 +1,7 @@
 <?php 
   session_start();
   include_once "../modelo/config.php";
-  if(!isset($_SESSION['cocina'])){
+  if(!isset($_SESSION['restaurant'])){
     header("location: ../../proyecto_10mo/login.php");
   }
 ?>

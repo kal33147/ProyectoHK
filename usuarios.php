@@ -1,7 +1,7 @@
 <?php 
   session_start();
   include_once "../modelo/config.php";
-  if(!isset($_SESSION['cocina'])){
+  if(!isset($_SESSION['restaurant'])){
     header("location: ../../index_cocina.php");
   }
 ?>
@@ -12,7 +12,7 @@
       <header>
         <div class="content">
           <h1><?php 
-          $sesion= $_SESSION['cocina'];
+          $sesion= $_SESSION['restaurant'];
           ?></h1>
           <?php 
             $sql = mysqli_query($conn, "SELECT * FROM usuario WHERE Nombre_usu = '".$sesion."'");
